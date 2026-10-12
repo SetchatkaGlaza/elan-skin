@@ -1,0 +1,11 @@
+# Единые окончания строк и корректная обработка бинарных файлов
+* text=auto eol=lf
+
+*.webp binary
+*.png  binary
+*.jpg  binary
+*.ico  binary
+*.mp4  binary
+*.webm binary
+*.woff binary
+*.woff2 binary

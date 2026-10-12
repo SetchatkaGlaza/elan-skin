@@ -1,0 +1,16 @@
+# Зависимости и сборка
+node_modules/
+dist/
+
+# Служебные файлы
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+!.env.example
+
+# Редакторы
+.vscode/*
+!.vscode/extensions.json
+.idea/

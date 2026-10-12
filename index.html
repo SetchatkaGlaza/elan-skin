@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ÉLAN SKIN — увлажняющая сыворотка Daily Hydration Serum</title>
+    <meta
+      name="description"
+      content="ÉLAN SKIN — концептуальный бренд уходовой косметики. Daily Hydration Serum: увлажняющая сыворотка для ежедневного ухода, лаконичная формула и спокойный ритуал. Демонстрационный проект для портфолио."
+    />
+    <meta name="theme-color" content="#F6F1E9" />
+    <link rel="icon" href="favicon.ico?v=2" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2" />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="ÉLAN SKIN" />
+    <meta property="og:title" content="ÉLAN SKIN — Меньше лишнего. Больше заботы о коже." />
+    <meta
+      property="og:description"
+      content="Увлажняющая сыворотка Daily Hydration Serum. Концептуальный лендинг косметического бренда."
+    />
+    <meta property="og:image" content="og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preload" as="image" href="images/product-hero-1122.webp" imagesrcset="images/product-hero-640.webp 640w, images/product-hero-1122.webp 1122w" imagesizes="(min-width: 900px) 52vw, 100vw" fetchpriority="high" />
+
+    <link rel="stylesheet" href="./src/styles/variables.css" />
+    <link rel="stylesheet" href="./src/styles/base.css" />
+    <link rel="stylesheet" href="./src/styles/layout.css" />
+    <link rel="stylesheet" href="./src/styles/components.css" />
+    <link rel="stylesheet" href="./src/styles/responsive.css" />
+
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+    <!-- 1. ШАПКА -->
+    <header class="header" data-header>
+      <div class="header__bar">
+        <a class="logo" href="#top" aria-label="ÉLAN SKIN — в начало страницы" data-logo>ÉLAN&nbsp;SKIN</a>
+
+        <nav class="nav" id="site-nav" aria-label="Основная навигация" data-nav>
+          <ul class="nav__list">
+            <li><a class="nav__link" href="#product">Продукт</a></li>
+            <li><a class="nav__link" href="#formula">Формула</a></li>
+            <li><a class="nav__link" href="#usage">Применение</a></li>
+            <li><a class="nav__link" href="#faq">FAQ</a></li>
+          </ul>
+          <a class="btn btn--primary nav__buy" href="#buy">Купить</a>
+        </nav>
+
+        <div class="header__actions">
+          <button class="icon-btn cart-btn" type="button" data-cart-open aria-label="Открыть корзину. Товаров: 0">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Z" /><path d="M9 8V6a3 3 0 0 1 6 0v2" /></svg>
+            <span class="cart-btn__count" data-cart-count aria-hidden="true">0</span>
+          </button>
+          <a class="btn btn--primary btn--sm header__buy" href="#buy">Купить</a>
+          <button class="icon-btn burger" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню" data-burger>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- 2. HERO -->
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero__grid">
+          <div class="hero__copy">
+            <p class="eyebrow hero-in" style="--d: 0ms">Ежедневный ритуал ухода</p>
+            <h1 id="hero-title" class="hero-in" style="--d: 90ms">Меньше лишнего.<br /><em>Больше заботы</em> о&nbsp;коже.</h1>
+            <p class="lead hero-in" style="--d: 200ms">Увлажняющая сыворотка для тех, кто ценит понятный уход и&nbsp;спокойные ежедневные ритуалы.</p>
+          </div>
+
+          <figure class="hero__media hero-in" style="--d: 120ms" data-tilt>
+            <img
+              class="hero__img"
+              src="images/product-hero-1122.webp"
+              srcset="images/product-hero-640.webp 640w, images/product-hero-1122.webp 1122w"
+              sizes="(min-width: 900px) 52vw, 100vw"
+              width="1122"
+              height="1402"
+              fetchpriority="high"
+              decoding="async"
+              alt="Стеклянный флакон с пипеткой ÉLAN SKIN Daily Hydration Serum 30 мл на тёплом бежевом фоне с мягкими тенями пальмовых листьев"
+              data-parallax="0.05"
+            />
+            <figcaption class="hero__tag">
+              <span>30 мл</span>
+              <span>Сыворотка для лица</span>
+            </figcaption>
+          </figure>
+
+          <div class="hero__buy hero-in" style="--d: 300ms">
+            <p class="hero__price">
+              <span class="price">2&nbsp;490&nbsp;₽</span>
+              <span class="hero__price-note">Daily Hydration Serum · 30&nbsp;мл<br />Демонстрационная цена</span>
+            </p>
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#buy">Выбрать сыворотку</a>
+              <a class="btn btn--ghost" href="#formula">Изучить формулу</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. ЗНАКОМСТВО С ПРОДУКТОМ -->
+      <section class="section intro" id="product" aria-labelledby="intro-title">
+        <div class="container intro__grid">
+          <figure class="intro__media" data-reveal>
+            <img
+              src="images/product-detail-1122.webp"
+              srcset="images/product-detail-640.webp 640w, images/product-detail-1122.webp 1122w"
+              sizes="(min-width: 900px) 46vw, 100vw"
+              width="1122"
+              height="1402"
+              loading="lazy"
+              decoding="async"
+              alt="Флакон Daily Hydration Serum рядом с картонной коробкой на каменных подиумах, рядом сухая трава"
+            />
+          </figure>
+
+          <div class="intro__copy">
+            <p class="eyebrow" data-reveal>Знакомство с продуктом</p>
+            <h2 id="intro-title" data-reveal style="--d: 60ms">Daily Hydration Serum</h2>
+            <p class="intro__meta" data-reveal style="--d: 100ms"><span>30&nbsp;мл</span><span>Увлажняющая сыворотка для лица</span></p>
+            <p class="lead" data-reveal style="--d: 140ms">Лёгкая сыворотка для ежедневного ухода: одна понятная формула вместо длинной полки средств. Она создана, чтобы уход оставался спокойным и&nbsp;простым.</p>
+
+            <ul class="features">
+              <li class="feature" data-reveal style="--d: 80ms">
+                <span class="feature__num">01</span>
+                <div>
+                  <h3>Комфортная текстура</h3>
+                  <p>Прозрачный гель, который легко наносить и приятно распределять.</p>
+                </div>
+              </li>
+              <li class="feature" data-reveal style="--d: 140ms">
+                <span class="feature__num">02</span>
+                <div>
+                  <h3>Простое применение</h3>
+                  <p>Флакон с пипеткой: нужное количество&nbsp;— одним движением.</p>
+                </div>
+              </li>
+              <li class="feature" data-reveal style="--d: 200ms">
+                <span class="feature__num">03</span>
+                <div>
+                  <h3>Вписывается в ежедневный уход</h3>
+                  <p>Занимает своё место между очищением и кремом.</p>
+                </div>
+              </li>
+            </ul>
+
+            <a class="link-arrow" href="#formula" data-reveal>
+              Посмотреть формулу
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. ПРЕИМУЩЕСТВА -->
+      <section class="section benefits" id="benefits" aria-labelledby="benefits-title">
+        <div class="container">
+          <header class="section-head section-head--split">
+            <div>
+              <p class="eyebrow" data-reveal>Преимущества</p>
+              <h2 id="benefits-title" data-reveal style="--d: 60ms">Уход, который вписывается в&nbsp;жизнь.</h2>
+            </div>
+            <p class="section-head__text" data-reveal style="--d: 120ms">Простая последовательность действий, понятное назначение и&nbsp;комфортное использование каждый день.</p>
+          </header>
+
+          <ul class="benefits__grid">
+            <li class="benefit" data-reveal>
+              <figure class="benefit__media">
+                <img src="images/benefit-hydration-1254.webp" srcset="images/benefit-hydration-640.webp 640w, images/benefit-hydration-1254.webp 1254w" sizes="(min-width: 900px) 40vw, 100vw" width="1254" height="1254" loading="lazy" decoding="async" alt="Прозрачная стеклянная чаша с водой на травертиновой плите, блики света на стене, рядом флакон сыворотки" />
+              </figure>
+              <p class="benefit__num">01</p>
+              <h3>Увлажнение</h3>
+              <p>Сыворотка создана для ежедневного увлажнения и&nbsp;поддержания комфорта кожи.</p>
+            </li>
+
+            <li class="benefit" data-reveal style="--d: 80ms">
+              <figure class="benefit__media">
+                <img src="images/benefit-texture-1254.webp" srcset="images/benefit-texture-640.webp 640w, images/benefit-texture-1254.webp 1254w" sizes="(min-width: 900px) 40vw, 100vw" width="1254" height="1254" loading="lazy" decoding="async" alt="Макроснимок прозрачного геля сыворотки на песочной поверхности" />
+              </figure>
+              <p class="benefit__num">02</p>
+              <h3>Комфортная текстура</h3>
+              <p>Прозрачный гель с мягкой консистенцией: его приятно наносить и&nbsp;легко распределять.</p>
+            </li>
+
+            <li class="benefit" data-reveal>
+              <figure class="benefit__media">
+                <img src="images/benefit-routine-1254.webp" srcset="images/benefit-routine-640.webp 640w, images/benefit-routine-1254.webp 1254w" sizes="(min-width: 900px) 40vw, 100vw" width="1254" height="1254" loading="lazy" decoding="async" alt="Флакон сыворотки на полке рядом со сложенным полотенцем и каменной чашей в утреннем свете" />
+              </figure>
+              <p class="benefit__num">03</p>
+              <h3>Простая рутина</h3>
+              <p>Один шаг между очищением и кремом: без сложных схем и&nbsp;длинных инструкций.</p>
+            </li>
+
+            <li class="benefit" data-reveal style="--d: 80ms">
+              <figure class="benefit__media">
+                <img src="images/benefit-format-1254.webp" srcset="images/benefit-format-640.webp 640w, images/benefit-format-1254.webp 1254w" sizes="(min-width: 900px) 40vw, 100vw" width="1254" height="1254" loading="lazy" decoding="async" alt="Рука в светлом вязаном рукаве держит компактный флакон сыворотки" />
+              </figure>
+              <p class="benefit__num">04</p>
+              <h3>Лаконичный формат</h3>
+              <p>Компактный стеклянный флакон на&nbsp;30&nbsp;мл с&nbsp;пипеткой: удобно хранить дома и&nbsp;брать с&nbsp;собой.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 5. ТЕКСТУРА -->
+      <section class="texture on-dark" id="texture" aria-labelledby="texture-title">
+        <div class="container texture__grid">
+          <div class="texture__copy">
+            <p class="eyebrow eyebrow--light" data-reveal>Текстура</p>
+            <h2 id="texture-title" data-reveal style="--d: 60ms">Прозрачный гель.<br /><em>Спокойное</em> нанесение.</h2>
+            <p class="lead" data-reveal style="--d: 120ms">Капля мягко растекается по поверхности и&nbsp;складывается в&nbsp;тонкий, гладкий слой. Именно так задуман ритуал: без спешки и&nbsp;лишних движений.</p>
+
+            <div class="seg" role="group" aria-label="Выбор ролика" data-reveal style="--d: 180ms">
+              <button class="seg__btn is-active" type="button" aria-pressed="true" data-video-target="drop">Капля</button>
+              <button class="seg__btn" type="button" aria-pressed="false" data-video-target="spread">Нанесение</button>
+            </div>
+          </div>
+
+          <figure class="texture__video" data-reveal data-video-stage>
+            <div class="texture__frame">
+              <video class="vid is-active" data-video="drop" muted loop playsinline preload="metadata" poster="images/poster-serum-drop-loop.webp" width="1264" height="710" aria-label="Капля сыворотки с пипетки на поверхности крупным планом">
+                <source src="video/serum-drop-loop.webm" type="video/webm" />
+                <source src="video/serum-drop-loop.mp4" type="video/mp4" />
+              </video>
+              <video class="vid" data-video="spread" muted loop playsinline preload="none" poster="images/poster-serum-gel-spread.webp" width="1264" height="710" aria-label="Гель сыворотки, растянутый между пальцами, крупным планом">
+                <source src="video/serum-gel-spread.webm" type="video/webm" />
+                <source src="video/serum-gel-spread.mp4" type="video/mp4" />
+              </video>
+              <button class="video-toggle" type="button" data-video-toggle aria-label="Поставить видео на паузу">
+                <svg class="i-pause" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1" /><rect x="14" y="5" width="4" height="14" rx="1" /></svg>
+                <svg class="i-play" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z" /></svg>
+              </button>
+            </div>
+          </figure>
+        </div>
+
+        <div class="container texture__stills">
+          <figure class="still still--wide" data-reveal>
+            <img src="images/serum-texture-1672.webp" srcset="images/serum-texture-640.webp 640w, images/serum-texture-1200.webp 1200w, images/serum-texture-1672.webp 1672w" sizes="(min-width: 900px) 62vw, 100vw" width="1672" height="940" loading="lazy" decoding="async" alt="Капля сыворотки готовится упасть с кончика стеклянной пипетки на тёплом фоне" />
+          </figure>
+          <figure class="still still--tall" data-reveal style="--d: 120ms">
+            <img src="images/serum-drop-1122.webp" srcset="images/serum-drop-640.webp 640w, images/serum-drop-1122.webp 1122w" sizes="(min-width: 900px) 30vw, 100vw" width="1122" height="1402" loading="lazy" decoding="async" alt="Капля прозрачной сыворотки куполом лежит на песочной поверхности" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- 6. СОСТАВ И ФОРМУЛА -->
+      <section class="section formula" id="formula" aria-labelledby="formula-title">
+        <div class="container">
+          <header class="section-head section-head--split">
+            <div>
+              <p class="eyebrow" data-reveal>Состав и формула</p>
+              <h2 id="formula-title" data-reveal style="--d: 60ms">Три ключевых компонента. Без&nbsp;лишнего.</h2>
+            </div>
+            <p class="section-head__text" data-reveal style="--d: 120ms">Короткая формула, в&nbsp;которой у&nbsp;каждого компонента своя понятная роль.</p>
+          </header>
+
+          <ul class="formula__list">
+            <li class="ingredient" data-reveal>
+              <figure class="ingredient__media">
+                <img src="images/ingredient-glycerin-1122.webp" srcset="images/ingredient-glycerin-640.webp 640w, images/ingredient-glycerin-1122.webp 1122w" sizes="(min-width: 900px) 30vw, 100vw" width="1122" height="1402" loading="lazy" decoding="async" alt="Стеклянная пипетка вытягивает нить прозрачной вязкой жидкости над стаканом — иллюстрация глицерина" />
+              </figure>
+              <p class="ingredient__num">01</p>
+              <h3>Глицерин</h3>
+              <p class="ingredient__inci" lang="en">Glycerin</p>
+              <p>Увлажняющий компонент, привычный для многих уходовых формул.</p>
+            </li>
+            <li class="ingredient" data-reveal style="--d: 100ms">
+              <figure class="ingredient__media">
+                <img src="images/ingredient-panthenol-1122.webp" srcset="images/ingredient-panthenol-640.webp 640w, images/ingredient-panthenol-1122.webp 1122w" sizes="(min-width: 900px) 30vw, 100vw" width="1122" height="1402" loading="lazy" decoding="async" alt="Керамическая пиала с белым кристаллическим порошком и деревянная ложка на травертине — иллюстрация пантенола" />
+              </figure>
+              <p class="ingredient__num">02</p>
+              <h3>Пантенол</h3>
+              <p class="ingredient__inci" lang="en">Panthenol</p>
+              <p>Компонент, применяемый в&nbsp;уходовых формулах для поддержания комфорта кожи.</p>
+            </li>
+            <li class="ingredient" data-reveal style="--d: 200ms">
+              <figure class="ingredient__media">
+                <img src="images/ingredient-hyaluronate-1122.webp" srcset="images/ingredient-hyaluronate-640.webp 640w, images/ingredient-hyaluronate-1122.webp 1122w" sizes="(min-width: 900px) 30vw, 100vw" width="1122" height="1402" loading="lazy" decoding="async" alt="Прозрачные гелевые шарики в стеклянной чашке и щепотка белого порошка — иллюстрация гиалуроната натрия" />
+              </figure>
+              <p class="ingredient__num">03</p>
+              <h3>Гиалуронат натрия</h3>
+              <p class="ingredient__inci" lang="en">Sodium Hyaluronate</p>
+              <p>Компонент, помогающий удерживать влагу.</p>
+            </li>
+          </ul>
+
+          <div class="formula__foot" data-reveal>
+            <button class="btn btn--outline" type="button" data-dialog-open="composition">Показать полный состав</button>
+            <p class="note">Состав концептуальный и&nbsp;приведён для демонстрации. Для реального продукта необходимо сверить фактическую формулу и&nbsp;INCI.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. КАК ИСПОЛЬЗОВАТЬ -->
+      <section class="section usage" id="usage" aria-labelledby="usage-title">
+        <div class="container">
+          <header class="section-head section-head--center">
+            <p class="eyebrow" data-reveal>Как использовать</p>
+            <h2 id="usage-title" data-reveal style="--d: 60ms">Три шага в&nbsp;ежедневном ритуале</h2>
+          </header>
+
+          <ol class="steps">
+            <li class="step" data-reveal>
+              <figure class="step__media">
+                <img src="images/ritual-1-cleanse-1122.webp" srcset="images/ritual-1-cleanse-640.webp 640w, images/ritual-1-cleanse-1122.webp 1122w" sizes="(min-width: 900px) 30vw, 100vw" width="1122" height="1402" loading="lazy" decoding="async" alt="Каменная чаша с водой, флакон с дозатором для очищения и сложенное полотенце" />
+              </figure>
+              <p class="step__num" aria-hidden="true">1</p>
+              <h3>Очистите кожу</h3>
+              <p>Умойтесь привычным средством и&nbsp;мягко промокните лицо полотенцем.</p>
+            </li>
+            <li class="step" data-reveal style="--d: 100ms">
+              <figure class="step__media">
+                <img src="images/ritual-2-serum-1122.webp" srcset="images/ritual-2-serum-640.webp 640w, images/ritual-2-serum-1122.webp 1122w" sizes="(min-width: 900px) 30vw, 100vw" width="1122" height="1402" loading="lazy" decoding="async" alt="Капля сыворотки падает с пипетки в керамическую пиалу рядом с флаконом" />
+              </figure>
+              <p class="step__num" aria-hidden="true">2</p>
+              <h3>Нанесите сыворотку</h3>
+              <p>Нанесите небольшое количество сыворотки согласно инструкции на&nbsp;упаковке.</p>
+            </li>
+            <li class="step" data-reveal style="--d: 200ms">
+              <figure class="step__media">
+                <img src="images/ritual-3-cream-1122.webp" srcset="images/ritual-3-cream-640.webp 640w, images/ritual-3-cream-1122.webp 1122w" sizes="(min-width: 900px) 30vw, 100vw" width="1122" height="1402" loading="lazy" decoding="async" alt="Открытая баночка крема с золотистой крышкой на травертиновом подносе" />
+              </figure>
+              <p class="step__num" aria-hidden="true">3</p>
+              <h3>Завершите уход</h3>
+              <p>Продолжите уход подходящим кремом.</p>
+            </li>
+          </ol>
+
+          <p class="note note--center" data-reveal>Частоту использования и&nbsp;совместимость с&nbsp;другими средствами уточняйте в&nbsp;инструкции на&nbsp;упаковке.</p>
+        </div>
+      </section>
+
+      <!-- 8. ПРОДУКТ И ПОКУПКА -->
+      <section class="section buy" id="buy" aria-labelledby="buy-title">
+        <div class="container buy__grid">
+          <div class="gallery" data-gallery data-reveal>
+            <div class="gallery__main">
+              <img
+                class="gallery__img"
+                src="images/product-buy-1254.webp"
+                srcset="images/product-buy-640.webp 640w, images/product-buy-1254.webp 1254w"
+                sizes="(min-width: 900px) 46vw, 100vw"
+                width="1254"
+                height="1254"
+                loading="lazy"
+                decoding="async"
+                alt="Флакон Daily Hydration Serum перед картонной коробкой на песочном фоне"
+                data-gallery-main
+              />
+              <div class="gallery__nav">
+                <button class="round-btn" type="button" data-gallery-prev aria-label="Предыдущее фото">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6" /></svg>
+                </button>
+                <button class="round-btn" type="button" data-gallery-next aria-label="Следующее фото">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg>
+                </button>
+              </div>
+            </div>
+            <ul class="gallery__thumbs" role="list">
+              <li><button class="thumb is-active" type="button" aria-pressed="true" aria-label="Фото 1: флакон и коробка" data-name="product-buy" data-alt="Флакон Daily Hydration Serum перед картонной коробкой на песочном фоне"><img src="images/product-buy-640.webp" width="640" height="640" loading="lazy" decoding="async" alt="" /></button></li>
+              <li><button class="thumb" type="button" aria-pressed="false" aria-label="Фото 2: флакон и коробка в тёплом свете" data-name="packaging" data-alt="Флакон и картонная коробка ÉLAN SKIN в косых лучах света"><img src="images/packaging-640.webp" width="640" height="640" loading="lazy" decoding="async" alt="" /></button></li>
+              <li><button class="thumb" type="button" aria-pressed="false" aria-label="Фото 3: крупный план флакона" data-name="product-gallery-2" data-alt="Крупный план горлышка флакона, золотистого колпачка и этикетки"><img src="images/product-gallery-2-640.webp" width="640" height="640" loading="lazy" decoding="async" alt="" /></button></li>
+              <li><button class="thumb" type="button" aria-pressed="false" aria-label="Фото 4: флакон на камне" data-name="product-gallery-3" data-alt="Флакон без пипетки лежит на каменной плите рядом с сухой травой, пипетка рядом"><img src="images/product-gallery-3-640.webp" width="640" height="640" loading="lazy" decoding="async" alt="" /></button></li>
+            </ul>
+          </div>
+
+          <div class="buy__panel">
+            <p class="eyebrow" data-reveal>Продукт и покупка</p>
+            <h2 id="buy-title" data-reveal style="--d: 60ms">Daily Hydration Serum</h2>
+            <p class="buy__sub" data-reveal style="--d: 100ms">Увлажняющая сыворотка для лица · 30&nbsp;мл</p>
+            <p class="buy__desc" data-reveal style="--d: 140ms">Прозрачная гелевая сыворотка в&nbsp;стеклянном флаконе с&nbsp;пипеткой. Ежедневный шаг между очищением и&nbsp;кремом.</p>
+
+            <form class="buy__form" data-buy-form novalidate data-reveal style="--d: 180ms">
+              <fieldset class="variants">
+                <legend>Комплектация</legend>
+                <div class="variants__grid">
+                <label class="variant">
+                  <input type="radio" name="variant" value="serum" data-price="2490" data-gallery-index="0" checked />
+                  <span class="variant__body">
+                    <span class="variant__name">Сыворотка</span>
+                    <span class="variant__meta">30&nbsp;мл</span>
+                    <span class="variant__price">2&nbsp;490&nbsp;₽</span>
+                  </span>
+                </label>
+                <label class="variant">
+                  <input type="radio" name="variant" value="gift" data-price="2790" data-gallery-index="1" />
+                  <span class="variant__body">
+                    <span class="variant__name">В&nbsp;подарочной коробке</span>
+                    <span class="variant__meta">30&nbsp;мл</span>
+                    <span class="variant__price">2&nbsp;790&nbsp;₽</span>
+                  </span>
+                </label>
+                </div>
+              </fieldset>
+
+              <div class="buy__row">
+                <div class="qty" role="group" aria-label="Количество">
+                  <button class="qty__btn" type="button" data-qty-minus aria-label="Уменьшить количество">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14" /></svg>
+                  </button>
+                  <output class="qty__value" data-qty-value aria-live="polite">1</output>
+                  <button class="qty__btn" type="button" data-qty-plus aria-label="Увеличить количество">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg>
+                  </button>
+                </div>
+                <p class="buy__price"><span class="visually-hidden">Цена: </span><output class="price" data-price-output>2&nbsp;490&nbsp;₽</output></p>
+              </div>
+
+              <button class="btn btn--primary btn--block" type="submit" data-add-to-cart>
+                <span class="btn__label">Добавить в корзину</span>
+                <svg class="btn__check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg>
+              </button>
+            </form>
+
+            <ul class="buy__links" data-reveal style="--d: 220ms">
+              <li><button class="link-btn" type="button" data-dialog-open="composition">Состав</button></li>
+              <li><a class="link-btn" href="delivery.html">Доставка и возврат</a></li>
+            </ul>
+
+            <p class="note" data-reveal style="--d: 260ms">Демонстрационный проект: цена условная, заказ не&nbsp;отправляется в&nbsp;реальный магазин.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. ДОПОЛНИТЕЛЬНОЕ ПРЕДЛОЖЕНИЕ -->
+      <section class="offer" id="offer" aria-labelledby="offer-title">
+        <div class="container offer__grid">
+          <figure class="offer__media" data-reveal>
+            <img src="images/set-offer-1586.webp" srcset="images/set-offer-640.webp 640w, images/set-offer-1200.webp 1200w, images/set-offer-1586.webp 1586w" sizes="(min-width: 900px) 56vw, 100vw" width="1586" height="992" loading="lazy" decoding="async" alt="Флакон сыворотки и баночка крема на травертиновой плите перед открытой подарочной коробкой" />
+          </figure>
+          <div class="offer__copy">
+            <p class="eyebrow" data-reveal>Дополнительное предложение <span class="chip">Концепт</span></p>
+            <h2 id="offer-title" data-reveal style="--d: 60ms">Набор «Сыворотка&nbsp;+&nbsp;крем»</h2>
+            <p class="lead" data-reveal style="--d: 120ms">Daily Hydration Serum 30&nbsp;мл и&nbsp;Daily Cream 50&nbsp;мл в&nbsp;подарочной коробке. Для тех, кто хочет собрать ритуал целиком.</p>
+            <div class="offer__buy" data-reveal style="--d: 180ms">
+              <p class="price">4&nbsp;990&nbsp;₽</p>
+              <button class="btn btn--primary" type="button" data-add-set>Добавить набор</button>
+            </div>
+            <p class="note" data-reveal style="--d: 220ms">Набор и&nbsp;крем являются концептуальными товарами для демонстрации.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. ФИЛОСОФИЯ БРЕНДА -->
+      <section class="philosophy" id="philosophy" aria-labelledby="philosophy-title">
+        <figure class="philosophy__media" data-reveal="fade">
+          <img src="images/philosophy-1916.webp" srcset="images/philosophy-640.webp 640w, images/philosophy-1200.webp 1200w, images/philosophy-1916.webp 1916w" sizes="100vw" width="1916" height="821" loading="lazy" decoding="async" alt="Флакон сыворотки на гладком каменном валуне, тени пальмовых листьев на тёплой стене" data-parallax="0.08" />
+        </figure>
+        <div class="container philosophy__body">
+          <p class="eyebrow eyebrow--center" data-reveal>Философия бренда</p>
+          <h2 id="philosophy-title" class="visually-hidden">Философия бренда</h2>
+          <blockquote class="philosophy__quote" data-reveal style="--d: 80ms">
+            <p>Уход не&nbsp;должен усложнять жизнь. Мы&nbsp;верим в&nbsp;<em>понятные ритуалы</em>, внимательное отношение к&nbsp;себе и&nbsp;красоту простых ежедневных привычек.</p>
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- 11. FAQ -->
+      <section class="section faq" id="faq" aria-labelledby="faq-title">
+        <div class="container faq__grid">
+          <header class="faq__head">
+            <p class="eyebrow" data-reveal>FAQ</p>
+            <h2 id="faq-title" data-reveal style="--d: 60ms">Ответы на&nbsp;вопросы</h2>
+            <p class="faq__lead" data-reveal style="--d: 120ms">Если не&nbsp;нашли нужный ответ, напишите нам: <a href="mailto:hello@elan-skin.example">hello@elan-skin.example</a> (демонстрационный адрес).</p>
+          </header>
+
+          <div class="faq__list" data-faq data-reveal>
+            <article class="faq__item">
+              <h3 class="faq__h"><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a1" id="faq-q1"><span>Для какого типа кожи предназначена сыворотка?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+              <div class="faq__a" id="faq-a1" role="region" aria-labelledby="faq-q1"><div class="faq__a-inner"><p>Сыворотка задумана как ежедневный увлажняющий уход. Если у&nbsp;вас чувствительная кожа или есть особые состояния, перед использованием изучите состав и&nbsp;проконсультируйтесь со специалистом.</p></div></div>
+            </article>
+
+            <article class="faq__item">
+              <h3 class="faq__h"><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a2" id="faq-q2"><span>Как правильно её применять?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+              <div class="faq__a" id="faq-a2" role="region" aria-labelledby="faq-q2"><div class="faq__a-inner"><p>Очистите кожу, нанесите небольшое количество сыворотки согласно инструкции на&nbsp;упаковке и&nbsp;продолжите уход подходящим кремом.</p></div></div>
+            </article>
+
+            <article class="faq__item">
+              <h3 class="faq__h"><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a3" id="faq-q3"><span>Какой объём у&nbsp;флакона?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+              <div class="faq__a" id="faq-a3" role="region" aria-labelledby="faq-q3"><div class="faq__a-inner"><p>30&nbsp;мл. Стеклянный флакон с&nbsp;пипеткой: компактный, удобно хранить дома.</p></div></div>
+            </article>
+
+            <article class="faq__item">
+              <h3 class="faq__h"><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a4" id="faq-q4"><span>Как хранить продукт?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+              <div class="faq__a" id="faq-a4" role="region" aria-labelledby="faq-q4"><div class="faq__a-inner"><p>Храните флакон плотно закрытым, в&nbsp;сухом прохладном месте, вдали от прямых солнечных лучей. Точные условия хранения указываются на&nbsp;упаковке.</p></div></div>
+            </article>
+
+            <article class="faq__item">
+              <h3 class="faq__h"><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a5" id="faq-q5"><span>Каковы условия доставки и&nbsp;возврата?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+              <div class="faq__a" id="faq-a5" role="region" aria-labelledby="faq-q5"><div class="faq__a-inner"><p><strong>Пример условий для демонстрации.</strong> Курьерская доставка по&nbsp;Москве&nbsp;— 1–3 дня, по&nbsp;России&nbsp;— 3–7 дней. Возврат возможен в&nbsp;течение 14&nbsp;дней при сохранении упаковки и&nbsp;товарного вида. Это концептуальные условия, реального заказа на&nbsp;сайте не&nbsp;существует.</p><p><a class="link-btn" href="delivery.html">Подробнее о&nbsp;доставке и&nbsp;возврате</a></p></div></div>
+            </article>
+
+            <article class="faq__item">
+              <h3 class="faq__h"><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a6" id="faq-q6"><span>Где посмотреть полный состав?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+              <div class="faq__a" id="faq-a6" role="region" aria-labelledby="faq-q6"><div class="faq__a-inner"><p>Полный (демонстрационный) состав доступен по&nbsp;кнопке ниже, а&nbsp;также в&nbsp;блоке покупки.</p><p><button class="link-btn" type="button" data-dialog-open="composition">Показать состав</button></p></div></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 12. ФИНАЛЬНЫЙ CTA -->
+      <section class="cta" id="final" aria-labelledby="cta-title">
+        <img class="cta__bg" src="images/final-cta-1672.webp" srcset="images/final-cta-640.webp 640w, images/final-cta-1200.webp 1200w, images/final-cta-1672.webp 1672w" sizes="100vw" width="1672" height="941" loading="lazy" decoding="async" alt="" data-parallax="0.06" />
+        <div class="cta__inner container">
+          <div class="cta__copy">
+            <h2 id="cta-title" data-reveal>Начните <em>с&nbsp;простого.</em></h2>
+            <p class="lead" data-reveal style="--d: 80ms">Сделайте ежедневный уход временем для себя.</p>
+            <div data-reveal style="--d: 160ms"><a class="btn btn--primary btn--lg" href="#buy">Выбрать сыворотку</a></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ПОДВАЛ -->
+    <footer class="footer on-dark">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <a class="logo logo--footer" href="#top" data-logo aria-label="ÉLAN SKIN — в начало страницы">ÉLAN&nbsp;SKIN</a>
+          <p>Осознанный уход за&nbsp;кожей без&nbsp;лишнего.</p>
+          <form class="subscribe" data-subscribe novalidate>
+            <label class="subscribe__label" for="sub-email">Новости бренда (демо)</label>
+            <div class="subscribe__row">
+              <input class="input" id="sub-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="Ваш e-mail" aria-describedby="sub-error" required />
+              <button class="btn btn--light" type="submit">Подписаться</button>
+            </div>
+            <p class="subscribe__error" id="sub-error" role="alert" data-subscribe-error></p>
+          </form>
+        </div>
+
+        <nav class="footer__col" aria-label="Разделы сайта">
+          <h2 class="footer__title">Разделы</h2>
+          <ul>
+            <li><a href="#product">Продукт</a></li>
+            <li><a href="#formula">Формула</a></li>
+            <li><a href="#usage">Применение</a></li>
+            <li><a href="#buy">Покупка</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col">
+          <h2 class="footer__title">Контакты (демо)</h2>
+          <ul>
+            <li><a href="mailto:hello@elan-skin.example">hello@elan-skin.example</a></li>
+            <li><a href="tel:+70000000000">+7 (000) 000-00-00</a></li>
+            <li>Москва, демонстрационный адрес</li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h2 class="footer__title">Документы</h2>
+          <ul>
+            <li><a href="privacy.html">Политика конфиденциальности</a></li>
+            <li><a href="terms.html">Условия покупки</a></li>
+            <li><a href="delivery.html">Доставка и возврат</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer__bottom">
+        <p>© 2026 ÉLAN SKIN</p>
+        <p>Концептуальная работа для портфолио. Бренд, продукты и&nbsp;цены вымышлены.</p>
+      </div>
+    </footer>
+
+    <!-- МИНИ-КОРЗИНА -->
+    <dialog class="drawer" id="cart" aria-labelledby="cart-title" data-cart>
+      <div class="drawer__panel">
+        <header class="drawer__head">
+          <h2 id="cart-title">Корзина</h2>
+          <button class="icon-btn" type="button" data-cart-close aria-label="Закрыть корзину">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+          </button>
+        </header>
+
+        <div class="drawer__body">
+          <p class="drawer__empty" data-cart-empty>Корзина пока пуста. Начните с&nbsp;простого: добавьте сыворотку.</p>
+          <ul class="cart-list" data-cart-list></ul>
+        </div>
+
+        <footer class="drawer__foot">
+          <p class="drawer__total"><span>Итого</span><output class="price" data-cart-total>0&nbsp;₽</output></p>
+          <button class="btn btn--primary btn--block" type="button" data-checkout disabled>Оформить заказ</button>
+          <p class="note">Демо-режим: заказ не&nbsp;отправляется в&nbsp;реальный магазин, данные хранятся только в&nbsp;вашем браузере.</p>
+        </footer>
+      </div>
+    </dialog>
+
+    <!-- ДИАЛОГ: состав -->
+    <dialog class="dialog" id="dialog-composition" aria-labelledby="dlg-comp-title">
+      <div class="dialog__panel">
+        <button class="icon-btn dialog__close" type="button" data-dialog-close aria-label="Закрыть">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+        </button>
+        <p class="eyebrow">Состав</p>
+        <h2 id="dlg-comp-title">Daily Hydration Serum</h2>
+        <p class="dialog__inci" lang="en">Aqua, Glycerin, Panthenol, Sodium Hyaluronate.</p>
+        <ul class="dialog__list">
+          <li><strong>Глицерин</strong> — увлажняющий компонент.</li>
+          <li><strong>Пантенол</strong> — компонент, применяемый для поддержания комфорта кожи.</li>
+          <li><strong>Гиалуронат натрия</strong> — компонент, помогающий удерживать влагу.</li>
+        </ul>
+        <p class="note">Демонстрационный состав вымышленного продукта. Перед публикацией как описания реального продукта его необходимо заменить фактическим INCI.</p>
+      </div>
+    </dialog>
+
+
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+
+    <noscript>
+      <style>
+        .hero-in {
+          opacity: 1 !important;
+          animation: none !important;
+        }
+      </style>
+    </noscript>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

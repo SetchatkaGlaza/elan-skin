@@ -1,0 +1,20 @@
+{
+  "name": "elan-skin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ÉLAN SKIN — концептуальный лендинг косметического бренда: HTML, CSS и JavaScript на Vite.",
+  "keywords": ["landing-page", "cosmetics", "e-commerce", "vite", "vanilla-js", "responsive", "portfolio"],
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}

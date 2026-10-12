@@ -1,0 +1,99 @@
+/* ==========================================================================
+   ÉLAN SKIN — Дизайн-токены
+   Цвета, шрифты, размеры, отступы, радиусы, тайминги. Единственное место, где задаются значения дизайн-системы.
+   ========================================================================== */
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("../fonts/cormorant-var.woff") format("woff");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("../fonts/cormorant-italic-var.woff") format("woff");
+  font-weight: 300 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope-var.woff") format("woff");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Палитра */
+  --ivory: #f6f1e9;
+  --sand: #e7dcce;
+  --taupe: #b7a18a;
+  --brown: #302c28;
+  --white: #ffffff;
+  --nude: #d9bfa5;
+
+  /* Производные для текста и линий */
+  --text: var(--brown);
+  --text-muted: #62594f; /* контраст ≥ 4.5:1 на ivory и sand */
+  --line: rgba(48, 44, 40, 0.14);
+  --line-strong: rgba(48, 44, 40, 0.28);
+  --on-dark: var(--ivory);
+  --on-dark-muted: #cdbfae;
+  --focus: #8a5a2b;
+
+  /* Шрифты */
+  --font-display: "Cormorant Garamond", "Cormorant", Georgia, "Times New Roman", serif;
+  --font-body: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+
+  /* Типографика */
+  --fs-h1: clamp(2.75rem, 1.6rem + 4.6vw, 5rem); /* 44 → 80 */
+  --fs-h2: clamp(2.125rem, 1.4rem + 2.8vw, 3.5rem); /* 34 → 56 */
+  --fs-h3: clamp(1.375rem, 1.2rem + 0.6vw, 1.75rem);
+  --fs-lead: clamp(1.125rem, 1.05rem + 0.35vw, 1.375rem); /* 18 → 22 */
+  --fs-body: clamp(0.9375rem, 0.9rem + 0.15vw, 1.0625rem); /* 15 → 17 */
+  --fs-small: 0.8125rem; /* 13 */
+  --fs-label: 0.75rem; /* 12 */
+  --fs-price: clamp(1.5rem, 1.3rem + 0.8vw, 2rem);
+
+  /* Сетка */
+  --max: 1440px;
+  --container: 1280px;
+  --gutter: clamp(20px, 4.4vw, 64px);
+  --header-h: 76px;
+
+  /* Отступы (шаг 8 px) */
+  --s1: 8px;
+  --s2: 16px;
+  --s3: 24px;
+  --s4: 32px;
+  --s5: 40px;
+  --s6: 48px;
+  --s8: 64px;
+  --s10: 80px;
+  --section: clamp(72px, 4rem + 6.5vw, 152px);
+
+  /* Радиусы */
+  --r-s: 4px;
+  --r-m: 8px;
+  --r-l: 16px;
+  --r-pill: 999px;
+
+  /* Движение */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --t-fast: 180ms;
+  --t-mid: 360ms;
+  --t-slow: 900ms;
+
+  /* Тени */
+  --shadow-soft: 0 24px 60px -28px rgba(48, 44, 40, 0.35);
+  --shadow-pop: 0 30px 80px -30px rgba(48, 44, 40, 0.45);
+}
+
+@media (max-width: 899px) {
+  :root {
+    --header-h: 64px;
+  }
+}
